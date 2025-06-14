@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Electron build outputs
+dist/
+release/
+.electron-builder/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+*.log
+firebase-debug.log*
+
+# Other common ignored files
+.env
+.DS_Store

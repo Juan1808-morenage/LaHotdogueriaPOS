@@ -1,0 +1,59 @@
+{
+  "name": "la-hotdogueria-rd-pos",
+  "version": "1.0.1",
+  "description": "Punto de Venta para La Hotdoguería RD",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^6.1.7"
+  },
+  "build": {
+    "appId": "com.lahotdogueriard.pos",
+    "productName": "La Hotdogueria RD POS",
+    "copyright": "Copyright © 2025 La Hotdoguería RD",
+    "directories": {
+      "output": "dist",
+      "buildResources": "resources"
+    },
+    "files": [
+      "**/*",
+      "!dist/",
+      "!resources/",
+      "!.git/",
+      "!*.md"
+    ],
+    "publish": {
+  "provider": "generic",
+  "url": "https://storage.googleapis.com/la-hotdogeria.appspot.com/updates/${os}/"
+      },
+    "win": {
+      "target": "nsis",
+      "icon": "resources/logo.icon.ico"
+    },
+    "mac": {
+      "category": "public.app-category.business",
+      "icon": "resources/icon.icns",
+      "target": "dmg"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "resources/icon.png",
+      "category": "Utility"
+    }
+  },
+  "keywords": []
+}

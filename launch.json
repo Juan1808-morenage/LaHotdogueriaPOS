@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "electron-main",
+      "request": "launch",
+      "name": "Launch Electron App",
+      "program": "${workspaceFolder}/main.js",
+      // --- AÑADE ESTE BLOQUE ---
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**/*.js" 
+      ]
+      // ------------------------
+    }
+  ]
+}
