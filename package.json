@@ -32,9 +32,11 @@
       "!.git/",
       "!*.md"
     ],
-    "publish": {
-  "provider": "generic",
-  "url": "https://storage.googleapis.com/la-hotdogeria.appspot.com/updates/${os}/"
+   "publish": {
+  "provider": "github",
+  "owner": "Juan1808-morenage", // Tu usuario de GitHub
+  "repo": "LaHotdogueriaPOS"     // El nombre de tu repositorio
+},
       },
     "win": {
       "target": "nsis",
