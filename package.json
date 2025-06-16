@@ -34,9 +34,9 @@
     ],
    "publish": {
   "provider": "github",
-  "owner": "Juan1808-morenage", // Tu usuario de GitHub
-  "repo": "LaHotdogueriaPOS"     // El nombre de tu repositorio
-},
+  "owner": "Juan1808-morenage",
+  "repo": "LaHotdogueriaPOS"
+
       },
     "win": {
       "target": "nsis",
