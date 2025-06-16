@@ -1,13 +1,13 @@
 {
   "name": "la-hotdogueria-rd-pos",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Punto de Venta para La Hotdoguería RD",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
-  },
+  "start": "electron .",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "electron-builder"
+},
   "author": "Tu Nombre",
   "license": "ISC",
   "devDependencies": {
@@ -23,8 +23,7 @@
     "productName": "La Hotdogueria RD POS",
     "copyright": "Copyright © 2025 La Hotdoguería RD",
     "directories": {
-      "output": "dist",
-      "buildResources": "resources"
+      "output": "dist"
     },
     "files": [
       "**/*",
