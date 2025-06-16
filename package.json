@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
   "start": "electron .",
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "build": "electron-builder"
+  "dist": "electron-builder",
+  "postinstall": "electron-builder install-app-deps"
 },
   "author": "Tu Nombre",
   "license": "ISC",
